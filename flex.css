@@ -63,13 +63,39 @@
 }
 
 /* Tablet Styles*/
+@media screen and (max-width: 1024px) {
+  .third,
+  .quarter {
+    width: calc(97% / 2);
+  }
 
+  [class^=box10] {
+    /* width: 98%; */
+    flex-grow: 1;
+  }
 
-
+  .flex-container {
+    height: fit-content; 
+  }
+}
+  
 
 /* Mobile Styles*/
+ @media screen and (max-width: 520px) {
+  [class^=box] {
+    width: 98%;
+  }
+
+ }
 
 
 
 
-
+/* use percents not pixels */
+/* @media screen and (width: ___)
+   don't use semicolon */
+/* Tablets: 1024px Phones: 520px */
+/* Can use flex grow to make an element completely fit 
+   within a horizontal area (width */
+/* can use classes and other selectors inside the {} of 
+    media queries */
